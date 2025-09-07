@@ -4,16 +4,24 @@ import {
   Instagram,
   Linkedin,
   Youtube,
+  Search,
+  ShoppingCartIcon,
+  User2,
 } from "lucide-react";
 
 export const footerData = {
   about: {
-    logo: "/logo.svg",
+    logo: "/assets/images/logo.png",
     description:
-      "Zarea is Pakistan’s leading digital B2B trade platform, connecting verified buyers and suppliers across high-impact sectors.",
+      "Zarea is <b><i>Pakistan’s leading digital B2B trade platform</i></b>, connecting verified buyers and suppliers across high-impact sectors.",
+    webLinks: [
+      { name: "Search", icon: Search },
+      { name: "ShoppingCartIcon", icon: ShoppingCartIcon },
+      { name: "User", icon: User2 },
+    ],
     social: [
       { name: "Facebook", icon: Facebook },
-      { name: "Twitter", icon: Twitter },
+      { name: "X (Twitter)", icon: Twitter },
       { name: "Instagram", icon: Instagram },
       { name: "Linkedin", icon: Linkedin },
       { name: "Youtube", icon: Youtube },
@@ -39,8 +47,7 @@ export const footerData = {
     heading: "Zarea Mobile App",
     subHeading: "Pakistan’s Leading B2B Commodity App",
     button: "Download the App →",
-    image: "/mobile.png",
+    image: "/assets/images/mobiles.png",
   },
   policies: ["Terms of Conditions", "Privacy Policy", "Cookie Policy"],
 };
-
