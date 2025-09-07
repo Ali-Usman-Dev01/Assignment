@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: "gilory";
+  src: url("/assets/fonts/gilory.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "broetown";
+  src: url("/assets/fonts/broetown.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "gilory", sans-serif;
+}
+
+.kode-mono {
+  font-family: "Kode Mono", monospace;
+}
+
+.signature {
+  font-family: "broetown", sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 60s linear infinite;
+}
+
+.service-card-bg {
+  background: linear-gradient(180deg, #FFFFFF 0%, #E7E9EB 100%);
+  border: 1px solid #E7E9EB
+}
+
+.product-category-bg {
+  background: linear-gradient(180deg, rgba(14, 36, 55, 0) 0%, #0E2437 100%);
+}
