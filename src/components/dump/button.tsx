@@ -10,10 +10,10 @@ export default function Button({
   className = "",
   rightIcon
 }: ButtonProps) {
-  let base =
+  const base =
     "max-md:px-3 px-5 rounded font-medium transition-colors duration-200";
 
-  let styles = {
+  const styles = {
     primary: "bg-[#F46600] text-white rounded-full hover:bg-orange-600",
     secondary: "bg-[#0E2437] text-white rounded-full",
     outline: "border border-white rounded-full text-white",
